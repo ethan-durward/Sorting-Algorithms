@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se2203.edurwar_assignment1.SortingHubController">
+    <children>
+        <Label layoutX="24.0" layoutY="358.0" text="Algorithm" />
+        <ComboBox fx:id="comboBox" layoutX="87.0" layoutY="353.0" prefWidth="150.0" />
+        <Slider fx:id="slider" layoutX="356.0" layoutY="360.0" max="128.0" min="32.0" onMouseClicked="#changeSize" onMouseDragged="#changeSize" prefHeight="14.0" prefWidth="217.0" />
+        <Label fx:id="label" layoutX="584.0" layoutY="359.0" text="64" />
+        <Label layoutX="269.0" layoutY="357.0" text="ArraySize" />
+        <Button fx:id="sortButton" layoutX="646.0" layoutY="354.0" mnemonicParsing="false" onAction="#runSort" text="Sort" />
+        <Button fx:id="resetArray" layoutX="719.0" layoutY="354.0" mnemonicParsing="false" onAction="#resetArr" text="Reset" />
+        <Pane fx:id="pane" layoutX="25.0" layoutY="21.0" prefHeight="320.0" prefWidth="740.0" style="-fx-background-color: silver; -fx-border-color: BLACK;" />
+    </children>
+</AnchorPane>
